@@ -1,15 +1,3 @@
-import React from "react";
 import ReactDOM from "react-dom";
-
-import "./index.scss";
-
-const App = () => (
-  <div className="container">
-    <div>Name: reactmfsass</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
-);
-export default App;
-// ReactDOM.render(<App />, document.getElementById("app"));
+import Demo from "./components/Demo";
+ReactDOM.render(<Demo />, document.getElementById("app"));

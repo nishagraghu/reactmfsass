@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test app should render the App component 1`] = `
+<div
+  className="container"
+>
+  <div>
+    Name: demoreactsass
+  </div>
+  <div>
+    Framework: react
+  </div>
+  <div>
+    Language: TypeScript
+  </div>
+  <div>
+    CSS: Empty CSS
+  </div>
+</div>
+`;

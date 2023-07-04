@@ -26,10 +26,6 @@ module.exports = (_, argv) => ({
         },
       },
       {
-        test: /\.(css)$/i,
-        use: ["style-loader", "css-loader", "postcss-loader"],
-      },
-      {
         test: /\.scss$/,
         use: [
           "style-loader",
@@ -38,18 +34,23 @@ module.exports = (_, argv) => ({
         ],
       },
       {
+        test: /\.(css)$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
+      {
         test: /\.(ts|tsx|js|jsx)$/,
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
         },
       },
+     
     ],
   },
 
   plugins: [
     new ModuleFederationPlugin({
-      name: "reactmfsass",
+      name: "demoreactsass",
       filename: "remoteEntry.js",
       remotes: {},
       exposes: {},
